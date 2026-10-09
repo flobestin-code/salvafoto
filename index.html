@@ -27,7 +27,7 @@
 </style>
 </head>
 <body><main>
-<nav><a href="#ru">Русский</a><a href="#en">English</a><a href="#uk">Українська</a><a href="#it">Italiano</a><a href="privacy.html">Privacy</a></nav>
+<nav><a href="#ru">Русский</a><a href="#en">English</a><a href="#uk">Українська</a><a href="#it">Italiano</a><a href="#de">Deutsch</a><a href="#es">Español</a><a href="#fr">Français</a><a href="privacy.html">Privacy</a></nav>
 
 <!-- ============================ РУССКИЙ ============================ -->
 <section id="ru" lang="ru">
@@ -63,7 +63,9 @@
 Снимок открывается на весь экран: листайте, приближайте, видео воспроизводится. «Поделиться» отдаёт исходный файл.
 «Вернуть это фото в «Фото»» возвращает снимок, сохранённый этим устройством; для снимка из копии другого устройства кнопка называется «Добавить в «Фото»».
 После нажатия окно не закрывается: кнопка показывает «Добавляю…», затем зелёную галочку «Добавлено в «Фото»». В «Фото» снимок встаёт по дате съёмки, а не в начало.
-Если снимок там уже есть, вместо кнопки написано «Уже есть в «Фото»». Кнопка «Удалённые» — вверху справа (на Mac — пункт бокового меню).</p>
+Если снимок там уже есть, вместо кнопки написано «Уже есть в «Фото»». Кнопка «Удалённые» — вверху справа (на Mac — пункт бокового меню).
+Кнопка-корзина в просмотре убирает снимок с диска в «Удалённые»; SalvaFoto не сохранит его снова, пока вы его оттуда не вернёте.
+Меню «Год» показывает один год или все; на Mac кнопка Finder открывает папку выбранного года.</p>
 <h3>Восстановить</h3>
 <p>Возвращает в «Фото» всё, чего там нет, — на новом телефоне или после переустановки системы. Если на диске копии нескольких
 устройств, выберите, чью вернуть. Вместе со снимком возвращаются его правки (кроме Live Photo и видео: «Фото» такие правки обратно
@@ -75,7 +77,8 @@
 <h3>Удалённые</h3>
 <p>Если вы удалили снимки в «Фото», их копии остаются на диске. Кнопка «Найти удалённые» переносит такие копии
 в этот раздел — ничего не стирая. Отсюда их можно вернуть в архив или в «Фото»: Live Photo возвращается целиком, с датой,
-«Избранным» и альбомами. Стереть навсегда можно только вручную.</p>
+«Избранным» и альбомами. Стереть навсегда можно только вручную.
+Перед тем как что-то стереть навсегда — из «Удалённых» или целую копию устройства, — SalvaFoto просит Face ID, Touch ID или код-пароль.</p>
 <h3>Освободить место</h3>
 <p>Убирает из «Фото» снимки, у которых на диске есть проверенная копия. Перед удалением SalvaFoto сверяет
 содержимое каждого файла. Удалённое остаётся в альбоме «Недавно удалённые» ещё 30 дней. Избранное можно не трогать.
@@ -106,7 +109,8 @@
 <p>Любой внешний: SSD, флешка, карта памяти (SD) через переходник. Лучше всего формат APFS (только Apple) или exFAT
 (Mac, Windows, фотоаппараты). На диск в формате FAT32 не запишется файл больше 4 ГБ — длинные видео пропустятся,
 остальное скопируется. На Mac подойдёт и сетевой диск (NAS). Внутренний диск iPhone или Mac не принимается:
-если с устройством что-то случится, пропали бы и фото, и копия.</p></details>
+если с устройством что-то случится, пропали бы и фото, и копия.
+Диск, отданный под Time Machine, работает на Mac, но iPhone его не видит — SalvaFoto об этом предупреждает.</p></details>
 
 <details><summary>Почему копирование просит интернет?</summary>
 <p>Если в «Фото» включено «Оптимизировать хранилище», оригиналы части снимков хранятся только в iCloud.
@@ -154,7 +158,7 @@
 Если приложение нашло у себя расхождение, в Настройках появится строка «Самопроверка» с кодом — пришлите и его.</p></details>
 
 <h2>Связь</h2>
-<p><a href="mailto:solano@tuta.io">solano@tuta.io</a> — на русском, английском, украинском или итальянском.
+<p><a href="mailto:solano@tuta.io">solano@tuta.io</a> — на русском, английском, украинском, итальянском, немецком, испанском или французском.
 <a href="privacy.html">Политика конфиденциальности</a>.</p>
 </section>
 
@@ -182,10 +186,10 @@ A drive that already holds a SalvaFoto archive is recognised by itself later.</l
 <p>On iPhone there are four tabs at the bottom (on iPad, at the top): Overview, Archive, Restore, Settings. On Mac, a sidebar.</p>
 <h3>Overview</h3><p>How many photos and videos are not on the drive yet, one Save button, the copy's progress, the drive and archive status, and the quick and full archive checks.</p>
 <h3>Backup (Mac)</h3><p>Copy details: how many to copy, the last result, and any errors. On iPhone all of this is on the Overview.</p>
-<h3>Archive</h3><p>Everything on the drive, by year, with Photos, Videos and Favorites filters and a search by file name, folder, album or date. A photo opens full screen: swipe, zoom, videos play. When several devices save to the drive (say an iPhone and a Mac), each shows only its own copy at first; the “Copy on the drive” box at the top lists every copy with its file count and size, plus “Every copy on the drive” — just for viewing, nothing on the drive changes. Share hands out the original file. Put this back into Photos returns a photo this device saved; for a photo from another device's copy the button reads Add to Photos. The viewer stays open: the button shows “Adding…”, then a green “Added to Photos”. Photos files it by the day it was taken, not at the top. If the photo is already there, it says “Already in Photos”. Deleted is at the top right (on Mac, in the sidebar).</p>
+<h3>Archive</h3><p>Everything on the drive, by year, with Photos, Videos and Favorites filters and a search by file name, folder, album or date. A photo opens full screen: swipe, zoom, videos play. When several devices save to the drive (say an iPhone and a Mac), each shows only its own copy at first; the “Copy on the drive” box at the top lists every copy with its file count and size, plus “Every copy on the drive” — just for viewing, nothing on the drive changes. Share hands out the original file. Put this back into Photos returns a photo this device saved; for a photo from another device's copy the button reads Add to Photos. The viewer stays open: the button shows “Adding…”, then a green “Added to Photos”. Photos files it by the day it was taken, not at the top. If the photo is already there, it says “Already in Photos”. Deleted is at the top right (on Mac, in the sidebar). The trash button in the viewer moves the photo from the drive to Deleted; SalvaFoto will not save it again until you bring it back. The Year menu shows one year or all of them; on Mac the Finder button opens the chosen year’s folder.</p>
 <h3>Restore</h3><p>Puts back into Photos everything it lacks — on a new phone or after reinstalling. When the drive holds copies of several devices, choose whose to bring back. Edits come back with their photos (not for Live Photos and videos: Photos does not take those edits back, so they stay on the drive), and a RAW comes back with its JPEG. Here too: Delete the “…” copy from the drive… erases one device's copy after two confirmations; files other devices' copies need stay. On Mac: Restore to Photos.</p>
 <h3>Step-by-step copy</h3><p>An assistant: choose what to copy (photos, videos, screenshots) and to which drive; on Mac also from where (the Photos library, a folder or an iPhone by cable). Handy for a small drive or part of the library.</p>
-<h3>Deleted</h3><p>When you delete photos in Photos, their copies stay on the drive. Find Deleted moves those copies here, erasing nothing. From here they can go back to the archive or to Photos; a Live Photo comes back whole, with its date, favourite and albums. Erasing them for good is only ever manual.</p>
+<h3>Deleted</h3><p>When you delete photos in Photos, their copies stay on the drive. Find Deleted moves those copies here, erasing nothing. From here they can go back to the archive or to Photos; a Live Photo comes back whole, with its date, favourite and albums. Erasing them for good is only ever manual. Before anything is erased for good — from Deleted or a whole device’s copy — SalvaFoto asks for Face ID, Touch ID or the device passcode.</p>
 <h3>Free Up Space</h3><p>Removes from Photos the items whose copy on the drive has been verified. SalvaFoto checks each file's contents first. Removed items stay in Recently Deleted for 30 days. Favourites can be kept. Items that cannot be deleted (a Shared Library, for example) are skipped. On iPhone it is in Settings; on Mac, in the sidebar.</p>
 <h3>Settings</h3><p>Drive; what to copy (photos, videos, screenshots, hidden, Live Photos, edited versions); Add to photos already saved — adds Live Photos and edits to photos saved before you turned those on; copy when the drive is connected; free-space reserve; a notification when done; appearance; log.</p>
 
@@ -200,7 +204,7 @@ A drive that already holds a SalvaFoto archive is recognised by itself later.</l
 
 <h2>Common questions</h2>
 <details><summary>What happens to my photos in Photos after copying?</summary><p>Nothing. SalvaFoto makes a copy; the originals stay in Photos. Something is removed from Photos only in Free Up Space, and only after you confirm.</p></details>
-<details><summary>Which drive works?</summary><p>Any external one: SSD, USB stick, memory card (SD) with an adapter. APFS (Apple only) or exFAT (Mac, Windows, cameras) work best. FAT32 cannot hold files over 4 GB — long videos are skipped, the rest is copied. On Mac a network drive (NAS) works too. The iPhone's or Mac's own disk is not accepted: if something happened to the device, the photos and the copy would go together.</p></details>
+<details><summary>Which drive works?</summary><p>Any external one: SSD, USB stick, memory card (SD) with an adapter. APFS (Apple only) or exFAT (Mac, Windows, cameras) work best. FAT32 cannot hold files over 4 GB — long videos are skipped, the rest is copied. On Mac a network drive (NAS) works too. The iPhone's or Mac's own disk is not accepted: if something happened to the device, the photos and the copy would go together. A drive used for Time Machine works on the Mac, but an iPhone cannot see it — SalvaFoto warns about this.</p></details>
 <details><summary>Why does copying need internet?</summary><p>With “Optimise Storage” on, some originals are kept only in iCloud. To copy them, Photos downloads them first, which needs internet. SalvaFoto itself sends nothing anywhere.</p></details>
 <details><summary>Can I copy to several drives?</summary><p>Yes. Pick another drive with Change drive… — each gets its own full archive. Drives it has seen before are recognised when you connect them.</p></details>
 <details><summary>Can an iPhone and a Mac use the same drive?</summary><p>Yes. Each device saves its own copy and the Archive shows that copy first; other devices' copies open from “Copy on the drive”. Identical files are stored once. When restoring you choose whose photos to bring back.</p></details>
@@ -214,7 +218,7 @@ A drive that already holds a SalvaFoto archive is recognised by itself later.</l
 <details><summary>Something doesn't work. What should I send?</summary><p>Open Settings → Log → Copy All and paste it into an email to <a href="mailto:solano@tuta.io">solano@tuta.io</a>. A detailed log is also on the drive itself: SalvaFoto/salvafoto.log. If the app found an inconsistency of its own, a Self-check row with a code appears in Settings — send that too.</p></details>
 
 <h2>Contact</h2>
-<p><a href="mailto:solano@tuta.io">solano@tuta.io</a> — in English, Russian, Ukrainian or Italian. <a href="privacy.html">Privacy Policy</a>.</p>
+<p><a href="mailto:solano@tuta.io">solano@tuta.io</a> — in English, Russian, Ukrainian, Italian, German, Spanish or French. <a href="privacy.html">Privacy Policy</a>.</p>
 </section>
 
 <hr>
@@ -240,10 +244,10 @@ SSD, флешку або карту пам’яті (SD) — у вихідній
 <p>На iPhone унизу (на iPad — угорі) чотири вкладки: Огляд, Архів, Відновити, Налаштування. На Mac — бічне меню.</p>
 <h3>Огляд</h3><p>Скільки фото й відео ще не на диску, одна кнопка «Зберегти», хід копіювання, стан диска й архіву, швидка і повна перевірка.</p>
 <h3>Бекап (Mac)</h3><p>Подробиці копіювання: скільки до копіювання, підсумок останньої копії, помилки. На iPhone усе це на «Огляді».</p>
-<h3>Архів</h3><p>Усе, що є на диску, за роками; фільтри «Фото», «Відео», «Улюблене» і пошук. Знімок відкривається на весь екран: гортайте, наближайте, відео відтворюється. Якщо на диск зберігають кілька пристроїв, кожен спершу бачить лише свою копію; інші відкриваються через рамку «Копія на диску» вгорі (лише перегляд, на диску нічого не змінюється). «Поділитися» віддає вихідний файл. «Повернути це фото у «Фото»» — для знімка цього пристрою; для знімка з копії іншого пристрою кнопка називається «Додати у «Фото»». Вікно не закривається: кнопка показує «Додаю…», потім зелену галочку «Додано у «Фото»». У «Фото» знімок стає за датою зйомки. «Видалені» — угорі праворуч (на Mac — у бічному меню).</p>
+<h3>Архів</h3><p>Усе, що є на диску, за роками; фільтри «Фото», «Відео», «Улюблене» і пошук. Знімок відкривається на весь екран: гортайте, наближайте, відео відтворюється. Якщо на диск зберігають кілька пристроїв, кожен спершу бачить лише свою копію; інші відкриваються через рамку «Копія на диску» вгорі (лише перегляд, на диску нічого не змінюється). «Поділитися» віддає вихідний файл. «Повернути це фото у «Фото»» — для знімка цього пристрою; для знімка з копії іншого пристрою кнопка називається «Додати у «Фото»». Вікно не закривається: кнопка показує «Додаю…», потім зелену галочку «Додано у «Фото»». У «Фото» знімок стає за датою зйомки. «Видалені» — угорі праворуч (на Mac — у бічному меню). Кнопка-кошик у перегляді прибирає знімок із диска у «Видалені»; SalvaFoto не збереже його знову, доки ви його звідти не повернете. Меню «Рік» показує один рік або всі; на Mac кнопка Finder відкриває теку вибраного року.</p>
 <h3>Відновити</h3><p>Повертає у «Фото» все, чого там немає. Якщо на диску копії кількох пристроїв, оберіть, чию повернути. Разом зі знімком повертаються правки (крім Live Photo і відео — вони лишаються на диску) і RAW разом із JPEG. Тут же «Видалити копію «…» з диска…» — після двох підтверджень; файли, потрібні копіям інших пристроїв, лишаються.</p>
 <h3>Копія крок за кроком</h3><p>Помічник: самі обираєте, що копіювати і на який диск; на Mac — ще й звідки (медіатека «Фото», тека або iPhone кабелем).</p>
-<h3>Видалені</h3><p>Коли ви видаляєте знімки у «Фото», їхні копії лишаються на диску. Кнопка «Знайти видалені» переносить їх сюди, нічого не стираючи; їх можна повернути. Стерти назавжди — лише вручну.</p>
+<h3>Видалені</h3><p>Коли ви видаляєте знімки у «Фото», їхні копії лишаються на диску. Кнопка «Знайти видалені» переносить їх сюди, нічого не стираючи; їх можна повернути. Стерти назавжди — лише вручну. Перед тим як щось стерти назавжди, SalvaFoto просить Face ID, Touch ID або код-пароль.</p>
 <h3>Звільнити місце</h3><p>Прибирає з «Фото» знімки, копія яких на диску перевірена. Видалене лишається в «Нещодавно видалених» ще 30 днів. Вибране можна не чіпати.</p>
 <h3>Налаштування</h3><p>Диск; що копіювати; «Дописати до вже збережених»; копіювання при під’єднанні диска; запас вільного місця; сповіщення; тема; журнал.</p>
 
@@ -258,7 +262,7 @@ SSD, флешку або карту пам’яті (SD) — у вихідній
 
 <h2>Часті запитання</h2>
 <details><summary>Що стається з фото у «Фото» після копіювання?</summary><p>Нічого. Це копія; оригінали лишаються у «Фото». Видалення — лише в «Звільнити місце» і після вашого підтвердження.</p></details>
-<details><summary>Який диск підійде?</summary><p>Будь-який зовнішній: SSD, флешка, карта пам’яті (SD). Найкраще APFS або exFAT. На FAT32 не запишеться файл понад 4 ГБ — довгі відео пропустяться.</p></details>
+<details><summary>Який диск підійде?</summary><p>Будь-який зовнішній: SSD, флешка, карта пам’яті (SD). Найкраще APFS або exFAT. На FAT32 не запишеться файл понад 4 ГБ — довгі відео пропустяться. Диск, відданий під Time Machine, працює на Mac, але iPhone його не бачить.</p></details>
 <details><summary>Чому копіювання просить інтернет?</summary><p>Якщо увімкнено «Оптимізувати сховище», частина оригіналів є лише в iCloud; «Фото» спершу їх завантажує. Сам SalvaFoto нічого нікуди не надсилає.</p></details>
 <details><summary>Чи можна копіювати на кілька дисків?</summary><p>Так, кнопкою «Змінити диск…». На кожному буде свій повний архів.</p></details>
 <details><summary>Чи можуть iPhone і Mac копіювати на один диск?</summary><p>Так. Кожен пристрій зберігає свою копію і в «Архіві» спершу бачить лише її; копії інших пристроїв — через «Копія на диску». Однакові файли не дублюються. Під час відновлення можна вибрати, чиї знімки повернути.</p></details>
@@ -268,7 +272,7 @@ SSD, флешку або карту пам’яті (SD) — у вихідній
 <details><summary>Щось не працює?</summary><p>Налаштування → «Журнал» → «Скопіювати все» і надішліть на <a href="mailto:solano@tuta.io">solano@tuta.io</a>. Докладний журнал є й на диску: SalvaFoto/salvafoto.log.</p></details>
 
 <h2>Зв’язок</h2>
-<p><a href="mailto:solano@tuta.io">solano@tuta.io</a>. <a href="privacy.html">Політика конфіденційності</a>.</p>
+<p><a href="mailto:solano@tuta.io">solano@tuta.io</a> — українською, англійською, російською, італійською, німецькою, іспанською або французькою. <a href="privacy.html">Політика конфіденційності</a>.</p>
 </section>
 
 <hr>
@@ -294,10 +298,10 @@ qualsiasi computer le apre, anche senza SalvaFoto. Nessun account, e in Foto non
 <p>Su iPhone in basso (su iPad in alto) ci sono quattro schede: Panoramica, Archivio, Ripristina, Impostazioni. Su Mac, una barra laterale.</p>
 <h3>Panoramica</h3><p>Quante foto e video non sono ancora sul disco, un solo pulsante Salva, l’avanzamento della copia, lo stato del disco e dell’archivio, le verifiche rapida e completa.</p>
 <h3>Copia di riserva (Mac)</h3><p>Dettagli della copia: quanti da copiare, esito dell’ultima copia, eventuali errori. Su iPhone tutto questo è nella Panoramica.</p>
-<h3>Archivio</h3><p>Tutto ciò che è sul disco, per anno, con i filtri Foto, Video, Preferiti e la ricerca. Una foto si apre a tutto schermo: scorri, ingrandisci, i video si riproducono. Se più dispositivi salvano sul disco, ciascuno mostra prima solo la propria copia; le altre si aprono dal riquadro “Copia sul disco” in alto (solo visione, sul disco non cambia nulla). Condividi consegna il file originale. Rimetti questa foto in Foto vale per le foto di questo dispositivo; per una foto della copia di un altro dispositivo il pulsante dice Aggiungi a Foto. La finestra resta aperta: il pulsante mostra “Aggiungo…”, poi una spunta verde “Aggiunta a Foto”. In Foto la foto si colloca alla data di scatto. Eliminate è in alto a destra (su Mac, nella barra laterale).</p>
+<h3>Archivio</h3><p>Tutto ciò che è sul disco, per anno, con i filtri Foto, Video, Preferiti e la ricerca. Una foto si apre a tutto schermo: scorri, ingrandisci, i video si riproducono. Se più dispositivi salvano sul disco, ciascuno mostra prima solo la propria copia; le altre si aprono dal riquadro “Copia sul disco” in alto (solo visione, sul disco non cambia nulla). Condividi consegna il file originale. Rimetti questa foto in Foto vale per le foto di questo dispositivo; per una foto della copia di un altro dispositivo il pulsante dice Aggiungi a Foto. La finestra resta aperta: il pulsante mostra “Aggiungo…”, poi una spunta verde “Aggiunta a Foto”. In Foto la foto si colloca alla data di scatto. Eliminate è in alto a destra (su Mac, nella barra laterale). Il cestino nel visore sposta la foto dal disco in Eliminate; SalvaFoto non la salva di nuovo finché non la recuperi. Il menu Anno mostra un anno o tutti; su Mac il pulsante Finder apre la cartella dell’anno scelto.</p>
 <h3>Ripristina</h3><p>Riporta in Foto tutto ciò che manca. Se sul disco ci sono copie di più dispositivi, scegli di chi riportarle. Con la foto tornano le modifiche (non per Live Photo e video: restano sul disco) e il RAW insieme al JPEG. Qui anche Elimina la copia “…” dal disco…, dopo due conferme; i file che servono alle copie di altri dispositivi restano.</p>
 <h3>Copia passo passo</h3><p>Un assistente: scegli che cosa copiare e su quale disco; su Mac anche da dove (libreria Foto, una cartella o un iPhone via cavo).</p>
-<h3>Eliminate</h3><p>Quando elimini foto in Foto, le loro copie restano sul disco. Trova eliminati le sposta qui senza cancellare nulla; da qui si possono recuperare. Cancellarle per sempre è solo manuale.</p>
+<h3>Eliminate</h3><p>Quando elimini foto in Foto, le loro copie restano sul disco. Trova eliminati le sposta qui senza cancellare nulla; da qui si possono recuperare. Cancellarle per sempre è solo manuale. Prima di cancellare qualcosa per sempre, SalvaFoto chiede Face ID, Touch ID o il codice del dispositivo.</p>
 <h3>Libera spazio</h3><p>Toglie da Foto gli elementi la cui copia sul disco è verificata. Restano in Eliminati di recente per 30 giorni. I preferiti si possono tenere.</p>
 <h3>Impostazioni</h3><p>Disco; che cosa copiare; Aggiungi alle foto già salvate; copia quando il disco è collegato; riserva di spazio; notifica al termine; aspetto; registro.</p>
 
@@ -312,7 +316,7 @@ qualsiasi computer le apre, anche senza SalvaFoto. Nessun account, e in Foto non
 
 <h2>Domande frequenti</h2>
 <details><summary>Che cosa succede alle foto in Foto dopo la copia?</summary><p>Niente. È una copia; gli originali restano in Foto. Si elimina qualcosa solo in Libera spazio, dopo la tua conferma.</p></details>
-<details><summary>Quale disco va bene?</summary><p>Qualsiasi disco esterno: SSD, chiavetta, scheda di memoria (SD). Meglio APFS o exFAT. Su FAT32 non entrano file oltre 4 GB: i video lunghi vengono saltati.</p></details>
+<details><summary>Quale disco va bene?</summary><p>Qualsiasi disco esterno: SSD, chiavetta, scheda di memoria (SD). Meglio APFS o exFAT. Su FAT32 non entrano file oltre 4 GB: i video lunghi vengono saltati. Un disco usato per Time Machine funziona sul Mac, ma l’iPhone non lo vede.</p></details>
 <details><summary>Perché la copia chiede internet?</summary><p>Con «Ottimizza spazio» alcuni originali sono solo in iCloud e Foto li scarica prima. SalvaFoto non invia nulla da nessuna parte.</p></details>
 <details><summary>Posso copiare su più dischi?</summary><p>Sì, con Cambia disco…. Ogni disco ha il proprio archivio completo.</p></details>
 <details><summary>iPhone e Mac possono usare lo stesso disco?</summary><p>Sì. Ogni dispositivo salva la propria copia e nell’Archivio mostra prima quella; le copie degli altri dispositivi si aprono da “Copia sul disco”. I file uguali sono salvati una sola volta. Nel ripristino scegli di chi riportare le foto.</p></details>
@@ -322,7 +326,184 @@ qualsiasi computer le apre, anche senza SalvaFoto. Nessun account, e in Foto non
 <details><summary>Qualcosa non funziona?</summary><p>Impostazioni → Registro → Copia tutto e invialo a <a href="mailto:solano@tuta.io">solano@tuta.io</a>. Un registro dettagliato è anche sul disco: SalvaFoto/salvafoto.log.</p></details>
 
 <h2>Contatti</h2>
-<p><a href="mailto:solano@tuta.io">solano@tuta.io</a>. <a href="privacy.html">Informativa sulla privacy</a>.</p>
+<p><a href="mailto:solano@tuta.io">solano@tuta.io</a> — in italiano, inglese, russo, ucraino, tedesco, spagnolo o francese. <a href="privacy.html">Informativa sulla privacy</a>.</p>
+</section>
+
+<hr>
+
+<!-- ============================ DEUTSCH ============================ -->
+<section id="de" lang="de">
+<h1>SalvaFoto – Hilfe</h1>
+<p class="muted">Für iPhone, iPad und Mac</p>
+
+<div class="summary"><strong>Was es ist.</strong> SalvaFoto kopiert deine Fotos und Videos aus der App „Fotos“ auf ein Laufwerk, das dir gehört –
+eine SSD, einen USB-Stick oder eine Speicherkarte (SD) – in Originalqualität. Die Kopien sind normale Dateien in Ordnern nach Jahr und Monat;
+jeder Computer kann sie öffnen, auch ohne SalvaFoto. Kein Konto, und in „Fotos“ ändert sich nichts.</div>
+
+<h2>Erste Schritte</h2>
+<ol>
+<li><strong>Schließe ein Laufwerk an</strong> und wähle „Laufwerk wählen …“. Eine SSD, ein USB-Stick oder eine Speicherkarte (SD) funktionieren; am Mac auch ein Netzlaufwerk oder ein Ordner darauf („Netzlaufwerk oder anderer Ordner …“). Das interne Laufwerk von iPhone oder Mac wird nicht akzeptiert: Die Kopie muss getrennt von den Fotos liegen.
+Ein Laufwerk, auf dem schon ein SalvaFoto-Archiv liegt, wird später von selbst erkannt.</li>
+<li><strong>Tippe auf „Sichern“.</strong> SalvaFoto vergleicht deine Mediathek mit dem Laufwerk und kopiert nur, was noch fehlt.</li>
+<li><strong>Sieh dir das Archiv an</strong> unter „Archiv“: Jedes gesicherte Foto ist dort. „Zustand des Archivs“ prüft, ob die Dateien auf dem Laufwerk intakt sind.</li>
+</ol>
+<p>Danach schließt du das Laufwerk ab und zu an und tippst auf „Sichern“ – es wird nur Neues kopiert.</p>
+
+<h2>Was wo ist</h2>
+<p>Am iPhone gibt es unten vier Tabs (am iPad oben): Übersicht, Archiv, Wiederherstellen, Einstellungen. Am Mac eine Seitenleiste.</p>
+<h3>Übersicht</h3><p>Wie viele Fotos und Videos noch nicht auf dem Laufwerk sind, eine Taste „Sichern“, der Fortschritt der Kopie, der Zustand von Laufwerk und Archiv sowie die schnelle und die vollständige Prüfung.</p>
+<h3>Sicherung (Mac)</h3><p>Details zur Kopie: wie viel zu kopieren ist, das letzte Ergebnis und eventuelle Fehler. Am iPhone steht all das in der Übersicht.</p>
+<h3>Archiv</h3><p>Alles auf dem Laufwerk, nach Jahren, mit den Filtern Fotos, Videos und Favoriten und einer Suche nach Dateiname, Ordner, Album oder Datum. Ein Foto öffnet sich im Vollbild: wischen, zoomen, Videos abspielen. Sichern mehrere Geräte auf das Laufwerk (etwa ein iPhone und ein Mac), zeigt jedes zuerst nur seine eigene Kopie; das Feld „Kopie auf dem Laufwerk“ oben listet alle Kopien mit Dateianzahl und Größe, dazu „Jede Kopie auf dem Laufwerk“ – nur zum Ansehen, auf dem Laufwerk ändert sich nichts. „Teilen“ gibt die Originaldatei weiter. „Zurück in „Fotos“ legen“ holt ein Foto zurück, das dieses Gerät gesichert hat; bei einem Foto aus der Kopie eines anderen Geräts heißt die Taste „Zu „Fotos“ hinzufügen“. Die Ansicht bleibt offen: Die Taste zeigt „Wird hinzugefügt …“, dann ein grünes „Zu „Fotos“ hinzugefügt“. „Fotos“ ordnet das Foto nach Aufnahmedatum ein, nicht ganz oben. Ist es schon da, steht dort „Schon in „Fotos““. „Gelöscht“ ist oben rechts (am Mac in der Seitenleiste). Der Papierkorb in der Ansicht verschiebt das Foto vom Laufwerk nach „Gelöscht“; SalvaFoto sichert es nicht erneut, bis du es zurückholst. Das Menü „Jahr“ zeigt ein Jahr oder alle; am Mac öffnet die Finder-Taste den Ordner des gewählten Jahres.</p>
+<h3>Wiederherstellen</h3><p>Holt alles in „Fotos“ zurück, was dort fehlt – auf einem neuen Telefon oder nach einer Neuinstallation. Liegen auf dem Laufwerk Kopien mehrerer Geräte, wähle, wessen zurückkommen. Bearbeitungen kommen mit ihren Fotos zurück (nicht bei Live Photos und Videos: „Fotos“ nimmt diese Bearbeitungen nicht zurück, sie bleiben auf dem Laufwerk), und ein RAW kommt mit seinem JPEG. Hier auch: „Kopie „…“ vom Laufwerk löschen …“ löscht die Kopie eines Geräts nach zwei Bestätigungen; Dateien, die Kopien anderer Geräte brauchen, bleiben. Am Mac: „In „Fotos“ wiederherstellen“.</p>
+<h3>Kopie Schritt für Schritt</h3><p>Ein Assistent: Wähle, was kopiert wird (Fotos, Videos, Bildschirmfotos) und auf welches Laufwerk; am Mac auch, woher (die Fotos-Mediathek, ein Ordner oder ein iPhone per Kabel). Praktisch für ein kleines Laufwerk oder einen Teil der Mediathek.</p>
+<h3>Gelöscht</h3><p>Wenn du Fotos in „Fotos“ löschst, bleiben ihre Kopien auf dem Laufwerk. „Gelöschte suchen“ verschiebt diese Kopien hierher, ohne etwas zu löschen. Von hier können sie zurück ins Archiv oder in „Fotos“; ein Live Photo kommt vollständig zurück, mit Datum, Favorit und Alben. Endgültig gelöscht wird nur von Hand. Bevor etwas endgültig gelöscht wird – aus „Gelöscht“ oder die ganze Kopie eines Geräts –, fragt SalvaFoto nach Face ID, Touch ID oder dem Gerätecode.</p>
+<h3>Speicher freigeben</h3><p>Entfernt aus „Fotos“ die Objekte, deren Kopie auf dem Laufwerk geprüft ist. SalvaFoto prüft vorher den Inhalt jeder Datei. Entfernte Objekte bleiben 30 Tage unter „Zuletzt gelöscht“. Favoriten können bleiben. Objekte, die sich nicht löschen lassen (etwa aus einer geteilten Mediathek), werden übersprungen. Am iPhone in den Einstellungen, am Mac in der Seitenleiste.</p>
+<h3>Einstellungen</h3><p>Laufwerk; was kopiert wird (Fotos, Videos, Bildschirmfotos, Ausgeblendete, Live Photos, bearbeitete Versionen); „Zu gesicherten Fotos hinzufügen“ – ergänzt Live Photos und Bearbeitungen bei Fotos, die vor dem Einschalten gesichert wurden; Sichern, wenn das Laufwerk angeschlossen ist; Platzreserve; Mitteilung am Ende; Darstellung; Protokoll.</p>
+
+<h2>Kostenlose Version und Vollversion</h2>
+<ul>
+<li><strong>Kostenlos:</strong> ein Archiv mit bis zu 500 Objekten auf dem Laufwerk und deren Rückkehr in „Fotos“. Das Archiv durchsehen und einzelne Fotos wiederherstellen ist immer kostenlos.</li>
+<li><strong>Vollversion:</strong> ein einmaliger Kauf, kein Abo, keine Werbung. Sie hebt die Grenze von 500 Objekten auf: Die ganze Mediathek wird gesichert, und das ganze Archiv kann zurück in „Fotos“. Den Preis zeigt der App Store.</li>
+<li>Ein Kauf gilt auf iPhone, iPad und Mac mit derselben Apple-ID. Familienfreigabe wird nicht unterstützt.</li>
+<li>Ist die kostenlose Grenze erreicht, bietet „Sichern“ die Vollversion an; alles bereits Gesicherte bleibt auf dem Laufwerk.</li>
+<li>Kaufen oder den Kauf wiederherstellen (etwa auf einem neuen Gerät): Einstellungen → Vollversion → „Kauf wiederherstellen“.</li>
+</ul>
+
+<h2>Häufige Fragen</h2>
+<details><summary>Was passiert nach dem Kopieren mit meinen Fotos in „Fotos“?</summary><p>Nichts. SalvaFoto macht eine Kopie; die Originale bleiben in „Fotos“. Entfernt wird nur über „Speicher freigeben“, und nur nach deiner Bestätigung.</p></details>
+<details><summary>Welches Laufwerk passt?</summary><p>Jedes externe: SSD, USB-Stick, Speicherkarte (SD) mit Adapter. Am besten APFS (nur Apple) oder exFAT (Mac, Windows, Kameras). FAT32 kann keine Dateien über 4 GB aufnehmen – lange Videos werden übersprungen, der Rest wird kopiert. Am Mac geht auch ein Netzlaufwerk (NAS). Das interne Laufwerk von iPhone oder Mac wird nicht akzeptiert: Passiert dem Gerät etwas, wären Fotos und Kopie zusammen weg. Ein Laufwerk für Time Machine funktioniert am Mac, aber ein iPhone sieht es nicht – SalvaFoto weist darauf hin.</p></details>
+<details><summary>Warum braucht das Kopieren Internet?</summary><p>Mit „Speicher optimieren“ liegen manche Originale nur in iCloud. Um sie zu kopieren, lädt „Fotos“ sie zuerst – dafür braucht es Internet. SalvaFoto selbst sendet nichts.</p></details>
+<details><summary>Kann ich auf mehrere Laufwerke kopieren?</summary><p>Ja. Wähle mit „Laufwerk wechseln …“ ein anderes – jedes bekommt sein eigenes vollständiges Archiv. Bekannte Laufwerke werden beim Anschließen erkannt.</p></details>
+<details><summary>Können ein iPhone und ein Mac dasselbe Laufwerk nutzen?</summary><p>Ja. Jedes Gerät sichert seine eigene Kopie, und das Archiv zeigt zuerst diese; die Kopien anderer Geräte öffnest du über „Kopie auf dem Laufwerk“. Gleiche Dateien werden nur einmal gespeichert. Beim Wiederherstellen wählst du, wessen Fotos zurückkommen.</p></details>
+<details><summary>Kann ich das iPhone beim Kopieren sperren?</summary><p>Unter iOS 26 läuft eine mit „Sichern“ gestartete Kopie bei gesperrtem Bildschirm weiter; der Fortschritt steht in einer Systemkarte. Unter älteren iOS-Versionen und bei der automatischen Kopie (beim Anschließen des Laufwerks) gibt iOS Apps im Hintergrund nur wenige Minuten: Lass große Kopien bei geöffneter App und angeschlossenem Ladegerät laufen. Wird eine Kopie unterbrochen, bleibt alles Geschriebene auf dem Laufwerk – tippe auf „Sichern“, und SalvaFoto erledigt den Rest.</p></details>
+<details><summary>Wie entferne ich das Laufwerk sicher?</summary><p>Am Mac tippst du auf „Auswerfen“ neben dem Laufwerksnamen. Am iPhone ziehst du es ab, wenn die Kopie fertig ist.</p></details>
+<details><summary>Ich habe Dateien von Hand vom Laufwerk gelöscht. Was nun?</summary><p>Beim nächsten Abgleich bemerkt SalvaFoto, dass sie fehlen, und bietet an, sie neu zu schreiben – solange die Fotos noch in „Fotos“ sind.</p></details>
+<details><summary>Merkt sich die App die Auswahl unter „Was kopiert wird“?</summary><p>Ja. Damit eine eingeschränkte Auswahl nicht vergessen wird, zeigt die Übersicht den orangen Hinweis „Nicht alles wird kopiert“ mit der Taste „Alles kopieren“. Eine Auswahl in „Kopie Schritt für Schritt“ gilt nur für diese Kopie.</p></details>
+<details><summary>Es heißt „keine Schreibrechte“ oder „Kein Laufwerk verbunden“, aber das Laufwerk ist da</summary><p>Das System hat der App den Zugriff auf das Laufwerk entzogen – das passiert, wenn das Laufwerk ohne Auswerfen abgezogen oder die App während einer Kopie aktualisiert wurde. Wähle „Laufwerk wechseln …“ und dasselbe Laufwerk: Der Zugriff ist wieder da, das Archiv bleibt unverändert. Hilft das nicht, öffne „Dateien“ und versuche, einen Ordner auf dem Laufwerk anzulegen. Geht das nicht, ist das Laufwerk schreibgeschützt eingebunden: Schließe es an einen Mac an, lass macOS es prüfen (Festplattendienstprogramm → Erste Hilfe) und wirf es aus.</p></details>
+<details><summary>Wie bekomme ich Fotos auf ein neues Telefon oder einen neuen Computer?</summary><p>Schließe das Laufwerk an, öffne Archiv → Wiederherstellen (am Mac: „In „Fotos“ wiederherstellen“ in der Seitenleiste) und tippe auf „Finden, was nicht in „Fotos“ ist“. Nur Fehlendes kommt zurück; deine aktuelle Mediathek wird nicht überschrieben. Ein einzelnes Foto holst du zurück, indem du es im Archiv öffnest.</p></details>
+<details><summary>Kann ich das Archiv ohne SalvaFoto öffnen?</summary><p>Ja. Auf dem Laufwerk liegt ein Ordner SalvaFoto mit normalen Dateien nach Jahr und Monat: originals/2026/09/IMG_0001.HEIC.</p></details>
+<details><summary>Etwas funktioniert nicht. Was soll ich schicken?</summary><p>Öffne Einstellungen → Protokoll → „Alles kopieren“ und füge es in eine E-Mail an <a href="mailto:solano@tuta.io">solano@tuta.io</a> ein. Ein ausführliches Protokoll liegt auch auf dem Laufwerk: SalvaFoto/salvafoto.log. Hat die App selbst eine Unstimmigkeit gefunden, erscheint in den Einstellungen eine Zeile „Selbsttest“ mit einem Code – schick ihn mit.</p></details>
+
+<h2>Kontakt</h2>
+<p><a href="mailto:solano@tuta.io">solano@tuta.io</a> – auf Deutsch, Englisch, Italienisch, Spanisch, Französisch, Russisch oder Ukrainisch. <a href="privacy.html">Datenschutzerklärung</a>.</p>
+</section>
+
+<hr>
+
+<!-- ============================ ESPAÑOL ============================ -->
+<section id="es" lang="es">
+<h1>Ayuda de SalvaFoto</h1>
+<p class="muted">Para iPhone, iPad y Mac</p>
+
+<div class="summary"><strong>Qué es.</strong> SalvaFoto copia tus fotos y vídeos de la app Fotos a un disco que es tuyo
+(un SSD, una memoria USB o una tarjeta de memoria SD) con calidad original. Las copias son archivos normales en carpetas por año y mes;
+cualquier ordenador puede abrirlas, incluso sin SalvaFoto. Sin cuenta, y en Fotos no cambia nada.</div>
+
+<h2>Primeros pasos</h2>
+<ol>
+<li><strong>Conecta un disco</strong> y pulsa Elegir disco…. Sirven un SSD, una memoria USB o una tarjeta de memoria (SD); en el Mac también un disco de red o una carpeta en él (Disco de red u otra carpeta…). El disco interno del iPhone o del Mac no se acepta: la copia tiene que estar aparte de las fotos.
+Un disco que ya tiene un archivo de SalvaFoto se reconoce solo más adelante.</li>
+<li><strong>Pulsa Guardar.</strong> SalvaFoto compara tu fototeca con el disco y copia solo lo que aún no está.</li>
+<li><strong>Mira el archivo</strong> en Archivo: ahí está cada foto guardada. Estado del archivo comprueba que los archivos del disco están intactos.</li>
+</ol>
+<p>Después, conecta el disco de vez en cuando y pulsa Guardar: solo se copia lo nuevo.</p>
+
+<h2>Qué hay en cada sitio</h2>
+<p>En el iPhone hay cuatro pestañas abajo (en el iPad, arriba): Resumen, Archivo, Restaurar y Ajustes. En el Mac, una barra lateral.</p>
+<h3>Resumen</h3><p>Cuántas fotos y vídeos aún no están en el disco, un botón Guardar, el progreso de la copia, el estado del disco y del archivo, y las comprobaciones rápida y completa.</p>
+<h3>Copia (Mac)</h3><p>Detalles de la copia: cuánto falta por copiar, el último resultado y los errores. En el iPhone todo esto está en Resumen.</p>
+<h3>Archivo</h3><p>Todo lo que hay en el disco, por años, con los filtros Fotos, Vídeos y Favoritos y una búsqueda por nombre de archivo, carpeta, álbum o fecha. Una foto se abre a pantalla completa: desliza, amplía, los vídeos se reproducen. Cuando varios dispositivos guardan en el disco (por ejemplo, un iPhone y un Mac), cada uno muestra primero solo su copia; el recuadro “Copia en el disco” de arriba lista todas las copias con su número de archivos y su tamaño, además de “Cada copia del disco”: solo para ver, en el disco no cambia nada. Compartir entrega el archivo original. Devolver a Fotos recupera una foto que guardó este dispositivo; para una foto de la copia de otro dispositivo el botón dice Añadir a Fotos. El visor sigue abierto: el botón muestra “Añadiendo a Fotos…” y luego un “Añadido a Fotos” verde. Fotos la coloca por la fecha de captura, no al principio. Si la foto ya está, pone “Ya está en Fotos”. Eliminados está arriba a la derecha (en el Mac, en la barra lateral). El botón de papelera del visor mueve la foto del disco a Eliminados; SalvaFoto no la volverá a guardar hasta que la recuperes. El menú Año muestra un año o todos; en el Mac el botón del Finder abre la carpeta del año elegido.</p>
+<h3>Restaurar</h3><p>Devuelve a Fotos todo lo que le falta: en un teléfono nuevo o tras reinstalar. Si el disco tiene copias de varios dispositivos, elige de cuál recuperar. Las ediciones vuelven con sus fotos (salvo en Live Photos y vídeos: Fotos no acepta de vuelta esas ediciones y se quedan en el disco), y un RAW vuelve con su JPEG. Aquí también: Eliminar la copia “…” del disco… borra la copia de un dispositivo tras dos confirmaciones; los archivos que necesitan las copias de otros dispositivos se quedan. En el Mac: Restaurar en Fotos.</p>
+<h3>Copia paso a paso</h3><p>Un asistente: elige qué copiar (fotos, vídeos, capturas de pantalla) y a qué disco; en el Mac también desde dónde (la fototeca de Fotos, una carpeta o un iPhone por cable). Útil para un disco pequeño o una parte de la fototeca.</p>
+<h3>Eliminados</h3><p>Cuando eliminas fotos en Fotos, sus copias se quedan en el disco. Buscar eliminados mueve esas copias aquí, sin borrar nada. Desde aquí pueden volver al archivo o a Fotos; una Live Photo vuelve entera, con su fecha, favorito y álbumes. Borrarlas definitivamente siempre es manual. Antes de borrar algo definitivamente (de Eliminados o la copia entera de un dispositivo), SalvaFoto pide Face ID, Touch ID o el código del dispositivo.</p>
+<h3>Liberar espacio</h3><p>Quita de Fotos los elementos cuya copia en el disco está comprobada. Antes, SalvaFoto comprueba el contenido de cada archivo. Lo quitado se queda 30 días en Eliminado recientemente. Puedes conservar los favoritos. Los elementos que no se pueden eliminar (de una fototeca compartida, por ejemplo) se omiten. En el iPhone está en Ajustes; en el Mac, en la barra lateral.</p>
+<h3>Ajustes</h3><p>Disco; qué copiar (fotos, vídeos, capturas, ocultos, Live Photos, versiones editadas); Añadir a las fotos ya guardadas, que añade Live Photos y ediciones a fotos guardadas antes de activarlos; guardar al conectar el disco; reserva de espacio libre; notificación al terminar; apariencia; registro.</p>
+
+<h2>Versión gratuita y completa</h2>
+<ul>
+<li><strong>Gratis:</strong> un archivo de hasta 500 elementos en el disco y devolverlos a Fotos. Ver el archivo y restaurar fotos sueltas siempre es gratis.</li>
+<li><strong>Versión completa:</strong> un solo pago, sin suscripción ni anuncios. Quita el límite de 500 elementos: se guarda toda la fototeca y todo el archivo puede volver a Fotos. El precio aparece en el App Store.</li>
+<li>Una compra sirve en iPhone, iPad y Mac con el mismo Apple ID. No admite En familia.</li>
+<li>Al llegar al límite gratuito, Guardar ofrece la versión completa; todo lo guardado se queda en el disco.</li>
+<li>Para comprar o restaurar la compra (por ejemplo, en un dispositivo nuevo): Ajustes → Versión completa → Restaurar compra.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<details><summary>¿Qué pasa con mis fotos en Fotos después de copiar?</summary><p>Nada. SalvaFoto hace una copia; los originales siguen en Fotos. Solo se quita algo de Fotos en Liberar espacio, y solo cuando lo confirmas.</p></details>
+<details><summary>¿Qué disco sirve?</summary><p>Cualquiera externo: SSD, memoria USB, tarjeta de memoria (SD) con adaptador. Lo mejor es APFS (solo Apple) o exFAT (Mac, Windows, cámaras). FAT32 no admite archivos de más de 4 GB: los vídeos largos se omiten y el resto se copia. En el Mac también sirve un disco de red (NAS). El disco interno del iPhone o del Mac no se acepta: si le pasara algo al dispositivo, se perderían las fotos y la copia a la vez. Un disco usado para Time Machine funciona en el Mac, pero el iPhone no lo ve; SalvaFoto lo avisa.</p></details>
+<details><summary>¿Por qué la copia necesita internet?</summary><p>Con “Optimizar almacenamiento”, algunos originales solo están en iCloud. Para copiarlos, Fotos los descarga primero y para eso hace falta internet. SalvaFoto no envía nada.</p></details>
+<details><summary>¿Puedo copiar a varios discos?</summary><p>Sí. Elige otro disco con Cambiar disco…: cada uno tiene su propio archivo completo. Los discos que ya conoce se reconocen al conectarlos.</p></details>
+<details><summary>¿Pueden un iPhone y un Mac usar el mismo disco?</summary><p>Sí. Cada dispositivo guarda su propia copia y Archivo muestra primero esa; las copias de otros dispositivos se abren desde “Copia en el disco”. Los archivos idénticos se guardan una sola vez. Al restaurar eliges de quién son las fotos que vuelven.</p></details>
+<details><summary>¿Puedo bloquear el iPhone mientras copia?</summary><p>En iOS 26, una copia iniciada con Guardar sigue con la pantalla bloqueada y su progreso aparece en una tarjeta del sistema. En versiones anteriores de iOS, y en la copia automática (al conectar el disco), iOS da a las apps en segundo plano solo unos minutos: haz las copias grandes con la app abierta y el teléfono cargando. Si una copia se interrumpe, todo lo escrito se queda en el disco: pulsa Guardar y SalvaFoto termina el resto.</p></details>
+<details><summary>¿Cómo quito el disco con seguridad?</summary><p>En el Mac, pulsa Expulsar junto al nombre del disco. En el iPhone, desconéctalo cuando termine la copia.</p></details>
+<details><summary>He borrado archivos del disco a mano. ¿Y ahora?</summary><p>En la siguiente comparación SalvaFoto nota que faltan y ofrece escribirlos de nuevo, siempre que las fotos sigan en Fotos.</p></details>
+<details><summary>¿Se recuerda la elección de Qué copiar?</summary><p>Sí. Para que una elección reducida no se olvide, Resumen muestra el aviso naranja “No se copia todo” con el botón Copiar todo. Una elección hecha en Copia paso a paso vale solo para esa copia.</p></details>
+<details><summary>Dice “sin permiso para guardar” o “No hay ningún disco conectado”, pero el disco está ahí</summary><p>El sistema retiró a la app el acceso al disco: pasa cuando el disco se desconectó sin expulsarlo o la app se actualizó durante una copia. Pulsa Cambiar disco… y elige el mismo disco: el acceso vuelve y el archivo sigue igual. Si no basta, abre Archivos e intenta crear una carpeta en el disco. Si no puedes, el disco está montado en solo lectura: conéctalo a un Mac, deja que macOS lo revise (Utilidad de Discos → Primera ayuda) y expúlsalo.</p></details>
+<details><summary>¿Cómo recupero las fotos en un teléfono u ordenador nuevo?</summary><p>Conecta el disco, abre Archivo → Restaurar (en el Mac: Restaurar en Fotos, en la barra lateral) y pulsa Buscar lo que no está en Fotos. Solo vuelve lo que falta; tu fototeca actual no se sobrescribe. Una sola foto se recupera abriéndola en Archivo.</p></details>
+<details><summary>¿Puedo abrir el archivo sin SalvaFoto?</summary><p>Sí. En el disco hay una carpeta SalvaFoto con archivos normales por año y mes: originals/2026/09/IMG_0001.HEIC.</p></details>
+<details><summary>Algo no funciona. ¿Qué envío?</summary><p>Abre Ajustes → Registro → Copiar todo y pégalo en un correo a <a href="mailto:solano@tuta.io">solano@tuta.io</a>. En el propio disco también hay un registro detallado: SalvaFoto/salvafoto.log. Si la app encontró una incoherencia propia, en Ajustes aparece una fila Autocomprobación con un código: envíalo también.</p></details>
+
+<h2>Contacto</h2>
+<p><a href="mailto:solano@tuta.io">solano@tuta.io</a>: en español, inglés, italiano, alemán, francés, ruso o ucraniano. <a href="privacy.html">Política de privacidad</a>.</p>
+</section>
+
+<hr>
+
+<!-- ============================ FRANÇAIS ============================ -->
+<section id="fr" lang="fr">
+<h1>Aide de SalvaFoto</h1>
+<p class="muted">Pour iPhone, iPad et Mac</p>
+
+<div class="summary"><strong>Ce que c’est.</strong> SalvaFoto copie vos photos et vidéos de l’app Photos sur un disque qui vous appartient —
+un SSD, une clé USB ou une carte mémoire (SD) — en qualité d’origine. Les copies sont des fichiers ordinaires dans des dossiers par année et par mois ;
+n’importe quel ordinateur peut les ouvrir, même sans SalvaFoto. Pas de compte, et rien ne change dans Photos.</div>
+
+<h2>Pour commencer</h2>
+<ol>
+<li><strong>Branchez un disque</strong> et touchez Choisir le disque…. Un SSD, une clé USB ou une carte mémoire (SD) conviennent ; sur Mac aussi un disque réseau ou un dossier dessus (Disque réseau ou autre dossier…). Le disque interne de l’iPhone ou du Mac n’est pas accepté : la copie doit être séparée des photos.
+Un disque qui contient déjà une archive SalvaFoto est reconnu tout seul par la suite.</li>
+<li><strong>Touchez Enregistrer.</strong> SalvaFoto compare votre photothèque avec le disque et ne copie que ce qui n’y est pas encore.</li>
+<li><strong>Regardez l’archive</strong> dans Archive : chaque photo enregistrée s’y trouve. État de l’archive vérifie que les fichiers du disque sont intacts.</li>
+</ol>
+<p>Ensuite, branchez le disque de temps en temps et touchez Enregistrer : seules les nouveautés sont copiées.</p>
+
+<h2>Où se trouve quoi</h2>
+<p>Sur iPhone, quatre onglets en bas (sur iPad, en haut) : Aperçu, Archive, Restaurer, Réglages. Sur Mac, une barre latérale.</p>
+<h3>Aperçu</h3><p>Combien de photos et vidéos ne sont pas encore sur le disque, un bouton Enregistrer, la progression de la copie, l’état du disque et de l’archive, et les vérifications rapide et complète.</p>
+<h3>Sauvegarde (Mac)</h3><p>Détails de la copie : ce qui reste à copier, le dernier résultat et les éventuelles erreurs. Sur iPhone, tout cela est dans l’Aperçu.</p>
+<h3>Archive</h3><p>Tout ce qui est sur le disque, par année, avec les filtres Photos, Vidéos et Favoris et une recherche par nom de fichier, dossier, album ou date. Une photo s’ouvre en plein écran : balayez, zoomez, les vidéos se lisent. Quand plusieurs appareils enregistrent sur le disque (un iPhone et un Mac, par exemple), chacun n’affiche d’abord que sa propre copie ; le cadre « Copie sur le disque » en haut liste toutes les copies avec leur nombre de fichiers et leur taille, plus « Chaque copie sur le disque » — uniquement pour consulter, rien ne change sur le disque. Partager transmet le fichier original. Remettre dans Photos récupère une photo enregistrée par cet appareil ; pour une photo de la copie d’un autre appareil, le bouton s’appelle Ajouter à Photos. La visionneuse reste ouverte : le bouton affiche « Ajout à Photos… », puis un « Ajouté à Photos » vert. Photos la range à sa date de prise de vue, pas en tête. Si la photo y est déjà, il est écrit « Déjà dans Photos ». Supprimés est en haut à droite (sur Mac, dans la barre latérale). La corbeille de la visionneuse place la photo du disque dans Supprimés ; SalvaFoto ne l’enregistre plus tant que vous ne la récupérez pas. Le menu Année affiche une année ou toutes ; sur Mac, le bouton Finder ouvre le dossier de l’année choisie.</p>
+<h3>Restaurer</h3><p>Remet dans Photos tout ce qui y manque — sur un nouveau téléphone ou après une réinstallation. Si le disque contient les copies de plusieurs appareils, choisissez laquelle récupérer. Les modifications reviennent avec leurs photos (sauf pour les Live Photos et les vidéos : Photos ne reprend pas ces modifications, elles restent sur le disque), et un RAW revient avec son JPEG. Ici aussi : Supprimer la copie « … » du disque… efface la copie d’un appareil après deux confirmations ; les fichiers dont les copies d’autres appareils ont besoin restent. Sur Mac : Restaurer dans Photos.</p>
+<h3>Copie pas à pas</h3><p>Un assistant : choisissez quoi copier (photos, vidéos, captures d’écran) et sur quel disque ; sur Mac aussi depuis où (la photothèque Photos, un dossier ou un iPhone par câble). Pratique pour un petit disque ou une partie de la photothèque.</p>
+<h3>Supprimés</h3><p>Quand vous supprimez des photos dans Photos, leurs copies restent sur le disque. Chercher les supprimés place ces copies ici, sans rien effacer. D’ici, elles peuvent revenir dans l’archive ou dans Photos ; une Live Photo revient entière, avec sa date, son favori et ses albums. L’effacement définitif est toujours manuel. Avant d’effacer quoi que ce soit définitivement — dans Supprimés ou toute la copie d’un appareil —, SalvaFoto demande Face ID, Touch ID ou le code de l’appareil.</p>
+<h3>Libérer de l’espace</h3><p>Retire de Photos les éléments dont la copie sur le disque est vérifiée. SalvaFoto contrôle d’abord le contenu de chaque fichier. Les éléments retirés restent 30 jours dans Suppressions récentes. Les favoris peuvent être gardés. Les éléments impossibles à supprimer (d’une photothèque partagée, par exemple) sont ignorés. Sur iPhone, c’est dans les Réglages ; sur Mac, dans la barre latérale.</p>
+<h3>Réglages</h3><p>Disque ; quoi copier (photos, vidéos, captures d’écran, masqués, Live Photos, versions modifiées) ; Ajouter aux photos déjà enregistrées — ajoute les Live Photos et les modifications aux photos enregistrées avant leur activation ; enregistrer quand le disque est branché ; réserve d’espace libre ; notification à la fin ; apparence ; journal.</p>
+
+<h2>Version gratuite et version complète</h2>
+<ul>
+<li><strong>Gratuit :</strong> une archive jusqu’à 500 éléments sur le disque, et leur remise dans Photos. Parcourir l’archive et restaurer des photos une à une est toujours gratuit.</li>
+<li><strong>Version complète :</strong> un achat unique, sans abonnement ni publicité. Elle lève la limite de 500 éléments : toute la photothèque est enregistrée et toute l’archive peut revenir dans Photos. Le prix est indiqué dans l’App Store.</li>
+<li>Un achat vaut sur iPhone, iPad et Mac avec le même identifiant Apple. Le partage familial n’est pas pris en charge.</li>
+<li>Quand la limite gratuite est atteinte, Enregistrer propose la version complète ; tout ce qui est déjà enregistré reste sur le disque.</li>
+<li>Pour acheter ou restaurer l’achat (sur un nouvel appareil, par exemple) : Réglages → Version complète → Restaurer l’achat.</li>
+</ul>
+
+<h2>Questions fréquentes</h2>
+<details><summary>Que deviennent mes photos dans Photos après la copie ?</summary><p>Rien. SalvaFoto fait une copie ; les originaux restent dans Photos. Rien n’est retiré de Photos, sauf dans Libérer de l’espace et seulement après votre confirmation.</p></details>
+<details><summary>Quel disque convient ?</summary><p>N’importe quel disque externe : SSD, clé USB, carte mémoire (SD) avec adaptateur. Le mieux : APFS (Apple uniquement) ou exFAT (Mac, Windows, appareils photo). FAT32 n’accepte pas de fichiers de plus de 4 Go — les longues vidéos sont ignorées, le reste est copié. Sur Mac, un disque réseau (NAS) convient aussi. Le disque interne de l’iPhone ou du Mac n’est pas accepté : s’il arrivait quelque chose à l’appareil, les photos et la copie disparaîtraient ensemble. Un disque utilisé pour Time Machine fonctionne sur le Mac, mais un iPhone ne le voit pas — SalvaFoto vous le signale.</p></details>
+<details><summary>Pourquoi la copie a-t-elle besoin d’Internet ?</summary><p>Avec « Optimiser le stockage », certains originaux ne sont que dans iCloud. Pour les copier, Photos les télécharge d’abord, ce qui demande Internet. SalvaFoto n’envoie rien.</p></details>
+<details><summary>Puis-je copier sur plusieurs disques ?</summary><p>Oui. Choisissez un autre disque avec Changer de disque… — chacun a sa propre archive complète. Les disques déjà vus sont reconnus quand vous les branchez.</p></details>
+<details><summary>Un iPhone et un Mac peuvent-ils utiliser le même disque ?</summary><p>Oui. Chaque appareil enregistre sa propre copie et l’Archive affiche d’abord celle-ci ; les copies des autres appareils s’ouvrent depuis « Copie sur le disque ». Les fichiers identiques ne sont stockés qu’une fois. À la restauration, vous choisissez de qui récupérer les photos.</p></details>
+<details><summary>Puis-je verrouiller l’iPhone pendant la copie ?</summary><p>Sous iOS 26, une copie lancée avec Enregistrer continue écran verrouillé ; sa progression s’affiche dans une carte du système. Sous les versions antérieures d’iOS, et pour la copie automatique (au branchement du disque), iOS ne laisse que quelques minutes aux apps en arrière-plan : faites les grosses copies app ouverte et téléphone en charge. Si une copie est interrompue, tout ce qui a été écrit reste sur le disque — touchez Enregistrer et SalvaFoto termine le reste.</p></details>
+<details><summary>Comment retirer le disque en toute sécurité ?</summary><p>Sur Mac, touchez Éjecter à côté du nom du disque. Sur iPhone, débranchez-le quand la copie est terminée.</p></details>
+<details><summary>J’ai supprimé des fichiers du disque à la main. Et maintenant ?</summary><p>À la comparaison suivante, SalvaFoto remarque leur absence et propose de les réécrire, tant que les photos sont encore dans Photos.</p></details>
+<details><summary>Le choix de Quoi copier est-il mémorisé ?</summary><p>Oui. Pour qu’un choix restreint ne soit pas oublié, l’Aperçu affiche l’avis orange « Tout n’est pas copié » avec le bouton Tout copier. Un choix fait dans Copie pas à pas ne vaut que pour cette copie.</p></details>
+<details><summary>Il est écrit « pas d’autorisation d’enregistrer » ou « Aucun disque connecté », mais le disque est là</summary><p>Le système a retiré à l’app l’accès au disque — cela arrive quand le disque a été débranché sans être éjecté ou que l’app a été mise à jour pendant une copie. Touchez Changer de disque… et choisissez le même disque : l’accès revient et l’archive reste telle quelle. Si cela ne suffit pas, ouvrez Fichiers et essayez de créer un dossier sur le disque. Si c’est impossible, le disque est monté en lecture seule : branchez-le sur un Mac, laissez macOS le vérifier (Utilitaire de disque → S.O.S.) et éjectez-le.</p></details>
+<details><summary>Comment récupérer les photos sur un nouveau téléphone ou ordinateur ?</summary><p>Branchez le disque, ouvrez Archive → Restaurer (sur Mac : Restaurer dans Photos, dans la barre latérale) et touchez Trouver ce qui n’est pas dans Photos. Seul ce qui manque revient ; votre photothèque actuelle n’est pas écrasée. Une seule photo se récupère en l’ouvrant dans Archive.</p></details>
+<details><summary>Puis-je ouvrir l’archive sans SalvaFoto ?</summary><p>Oui. Le disque contient un dossier SalvaFoto avec des fichiers ordinaires par année et par mois : originals/2026/09/IMG_0001.HEIC.</p></details>
+<details><summary>Quelque chose ne marche pas. Que faut-il envoyer ?</summary><p>Ouvrez Réglages → Journal → Tout copier et collez-le dans un e-mail à <a href="mailto:solano@tuta.io">solano@tuta.io</a>. Un journal détaillé se trouve aussi sur le disque : SalvaFoto/salvafoto.log. Si l’app a trouvé elle-même une incohérence, une ligne Autotest avec un code apparaît dans les Réglages — envoyez-la aussi.</p></details>
+
+<h2>Contact</h2>
+<p><a href="mailto:solano@tuta.io">solano@tuta.io</a> — en français, anglais, italien, allemand, espagnol, russe ou ukrainien. <a href="privacy.html">Politique de confidentialité</a>.</p>
 </section>
 </main></body>
 </html>
